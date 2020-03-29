@@ -43,7 +43,7 @@ class Transfer
   # elsif self.status == "reversed"
   #     @receiver.balance += @amount
   #     @sender.balance -= @amount
-  #   end
+     end
   end
 
 end
