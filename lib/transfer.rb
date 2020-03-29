@@ -36,14 +36,8 @@ class Transfer
       @receiver.balance -= @amount
       @sender.balance += @amount
       @status = "reversed"
-    end
-  # elsif @sender.close_account || @receiver.close_account
-  #     @status = "rejected"
-  #     "Transaction rejected. Please check your account balance."
-  # elsif self.status == "reversed"
-  #     @receiver.balance += @amount
-  #     @sender.balance -= @amount
      end
+   end
   end
 
 end
