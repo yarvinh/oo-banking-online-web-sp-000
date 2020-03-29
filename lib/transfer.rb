@@ -35,7 +35,7 @@ class Transfer
       else
       @receiver.balance -= @amount
       @sender.balance += @amount
-      @status = "complete"
+      @status = "reversed"
     end
   elsif @sender.close_account || @receiver.close_account
       @status = "rejected"
